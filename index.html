@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bautizo - Héctor Emilio Escobedo López</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f4f9f6;
+            color: #2c4a3e;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .page {
+            background-color: #ffffff;
+            position: relative;
+            margin-bottom: 40px;
+            border: 2px solid #b89742;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            padding: 60px 40px;
+            text-align: center;
+        }
+        .border-inner {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            border: 1px solid #b89742;
+            pointer-events: none;
+        }
+        .cross {
+            font-size: 36pt;
+            color: #b89742;
+            margin-bottom: 20px;
+        }
+        .header-text {
+            font-style: italic;
+            font-size: 14pt;
+            color: #5c7a6e;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .title {
+            font-size: 16pt;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #b89742;
+            margin-bottom: 10px;
+        }
+        .name {
+            font-size: 32pt;
+            font-weight: bold;
+            color: #1b362b;
+            letter-spacing: 1px;
+            line-height: 1.2;
+            margin-bottom: 30px;
+        }
+        .verse {
+            font-style: italic;
+            font-size: 13pt;
+            color: #4a6b5d;
+            margin: 30px auto;
+            max-width: 80%;
+            line-height: 1.6;
+            border-top: 1px solid #e0ede7;
+            border-bottom: 1px solid #e0ede7;
+            padding: 15px 0;
+        }
+        
+        /* Contenedor e Imagen del Bebé */
+        .photo-container {
+            max-width: 100%;
+            margin: 0 auto;
+            border: 3px solid #b89742;
+            padding: 15px;
+            background: #ffffff;
+            display: inline-block;
+        }
+        .baby-photo {
+            max-width: 100%;
+            width: 420px;
+            height: auto;
+            max-height: 550px;
+            display: block;
+            object-fit: cover;
+        }
+
+        .section-title {
+            font-size: 18pt;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #b89742;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #b89742;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        
+        /* Cuenta Regresiva */
+        .countdown-container {
+            margin: 30px 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .countdown-box {
+            background: #e6f0eb;
+            border: 1px solid #b89742;
+            padding: 15px;
+            border-radius: 4px;
+            min-width: 80px;
+        }
+        .countdown-number {
+            font-size: 20pt;
+            font-weight: bold;
+            color: #1b362b;
+        }
+        .countdown-label {
+            font-size: 9pt;
+            text-transform: uppercase;
+            color: #b89742;
+            margin-top: 5px;
+        }
+
+        /* Formulario */
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #1b362b;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 10pt;
+        }
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #b89742;
+            background-color: #f4f9f6;
+            color: #2c4a3e;
+            font-family: inherit;
+            font-size: 11pt;
+            border-radius: 4px;
+        }
+        input:focus, select:focus {
+            outline: none;
+            background-color: #ffffff;
+            box-shadow: 0 0 5px rgba(184, 151, 66, 0.3);
+        }
+        
+        .btn {
+            display: inline-block;
+            width: 100%;
+            max-width: 500px;
+            padding: 15px;
+            background-color: #2c4a3e;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 12pt;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            border: 1px solid #b89742;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #1b362b;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .btn-maps {
+            width: auto;
+            padding: 8px 20px;
+            font-size: 10pt;
+            margin-top: 10px;
+        }
+
+        .details-block {
+            margin-bottom: 35px;
+            line-height: 1.6;
+        }
+        .gift-text {
+            font-size: 13pt;
+            line-height: 1.6;
+            color: #3b5c4f;
+            max-width: 80%;
+            margin: 0 auto 30px auto;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- PÁGINA 1: PORTADA -->
+        <div class="page">
+            <div class="border-inner"></div>
+            <div class="cross">†</div>
+            <div class="header-text">
+                Con la bendición de Dios y el amor de nuestra familia,<br>
+                nos llena de alegría invitarte a compartir un día muy especial para nuestro hijo.
+            </div>
+            <div class="title">Invitación al Bautizo de</div>
+            <div class="name">Héctor Emilio<br>Escobedo López</div>
+            <div class="verse">
+                "Porque los niños son una herencia del Señor, fruto del vientre es una recompensa."
+            </div>
+            
+            <div class="title" style="margin-top: 40px;">El evento comenzará en:</div>
+            <div class="countdown-container">
+                <div class="countdown-box"><div class="countdown-number" id="days">00</div><div class="countdown-label">Días</div></div>
+                <div class="countdown-box"><div class="countdown-number" id="hours">00</div><div class="countdown-label">Horas</div></div>
+                <div class="countdown-box"><div class="countdown-number" id="minutes">00</div><div class="countdown-label">Min</div></div>
+                <div class="countdown-box"><div class="countdown-number" id="seconds">00</div><div class="countdown-label">Seg</div></div>
+            </div>
+        </div>
+
+        <!-- PÁGINA 2: SECCIÓN DE RETRATO CON LA IMAGEN REAL .JPG -->
+        <div class="page">
+            <div class="border-inner"></div>
+            <div class="title" style="margin-bottom: 30px;">Recuerdo de Bautizo</div>
+            
+            <div class="photo-container">
+                <!-- Aquí busca el archivo image.jpg directamente en tu repositorio -->
+                <img class="baby-photo" src="image.jpg" alt="Héctor Emilio Escobedo López">
+            </div>
+        </div>
+
+        <!-- PÁGINA 3: LOGÍSTICA -->
+        <div class="page">
+            <div class="border-inner"></div>
+            <div class="section-title">Ubicación y Horarios</div>
+            
+            <div class="details-block">
+                <strong style="color: #b89742; font-size: 14pt; text-transform: uppercase;">Ceremonia Religiosa</strong><br>
+                <strong>Centro de espiritualidad Mariano María Desatadora de Nudos</strong><br>
+                Calle Sierra de Tecuán 301, Colinas del Padre 2DA. Sección, Zacatecas.<br>
+                <span style="font-weight: bold;">Hora: 12:00 PM</span><br>
+                <a href="https://maps.google.com/?q=Centro+de+espiritualidad+Mariano+Maria+Desatadora+de+Nudos+Zacatecas" target="_blank" class="btn btn-maps">Abrir en Google Maps</a>
+            </div>
+
+            <div class="details-block">
+                <strong style="color: #b89742; font-size: 14pt; text-transform: uppercase;">Recepción</strong><br>
+                <strong>Alicia Garden</strong><br>
+                Carr. Federal Zacatecas-Fresnillo, Zacatlan, 98057 Zacatecas, Zac.<br>
+                <span style="font-weight: bold;">Hora: 3:00 PM</span><br>
+                <a href="https://maps.google.com/?q=Alicia+Garden+Zacatecas+Fresnillo" target="_blank" class="btn btn-maps">Abrir en Google Maps</a>
+            </div>
+
+            <div class="details-block" style="border-top: 1px dashed #b89742; padding-top: 20px;">
+                <strong style="color: #b89742; font-size: 12pt; text-transform: uppercase;">Código de Vestimenta</strong><br>
+                <span>Semiformal (Atuendo elegante pero cómodo)</span>
+            </div>
+        </div>
+
+        <!-- PÁGINA 4: REGALOS Y CONFIRMACIÓN INTERACTIVA -->
+        <div class="page">
+            <div class="border-inner"></div>
+            <div class="section-title">Mesa de Regalos</div>
+            <p class="gift-text">
+                "Tu presencia es nuestro mejor regalo; sin embargo, si deseas obsequiar algo, será bien recibido y totalmente agradecido."
+            </p>
+
+            <div class="section-title" style="margin-top: 20px;">Confirmación de Asistencia</div>
+            
+            <form id="rsvpForm">
+                <div class="form-group">
+                    <label for="guestName">Nombre Completo del Invitado:</label>
+                    <input type="text" id="guestName" required placeholder="Ej. Carlos Escobedo">
+                </div>
+                
+                <div class="form-group">
+                    <label for="attendance">¿Asistirás al evento?</label>
+                    <select id="attendance" required>
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="Sí, asistiré con gusto">Sí, asistiré con gusto</option>
+                        <option value="No podré asistir">Lo lamento, no podré asistir</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="companions">Número total de acompañantes (incluyéndote):</label>
+                    <select id="companions">
+                        <option value="1 persona">1 persona (Solo yo)</option>
+                        <option value="2 personas">2 personas</option>
+                        <option value="3 personas">3 personas</option>
+                        <option value="4 personas">4 personas</option>
+                        <option value="5 personas">5 personas o más</option>
+                    </select>
+                </div>
+
+                <button type="button" onclick="sendRSVP()" class="btn">Enviar Confirmación por WhatsApp</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script>
+        // Fecha objetivo: Sábado 1 de Agosto de 2026 a las 12:00 PM
+        const targetDate = new Date("August 1, 2026 12:00:00").getTime();
+
+        const countdownInterval = setInterval(function() {
+            const now = new Date().getTime();
+            const difference = targetDate - now;
+
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = days < 10 ? "0" + days : days;
+            document.getElementById("hours").innerText = hours < 10 ? "0" + hours : hours;
+            document.getElementById("minutes").innerText = minutes < 10 ? "0" + minutes : minutes;
+            document.getElementById("seconds").innerText = seconds < 10 ? "0" + seconds : seconds;
+
+            if (difference < 0) {
+                clearInterval(countdownInterval);
+                document.querySelector(".countdown-container").innerHTML = "<b style='color:#b89742; font-size:14pt;'>¡Es hoy! Bienvenidos al gran día.</b>";
+            }
+        }, 1000);
+
+        function sendRSVP() {
+            const name = document.getElementById("guestName").value;
+            const status = document.getElementById("attendance").value;
+            const totalCompanions = document.getElementById("companions").value;
+
+            if(!name || !status) {
+                alert("Por favor, completa los campos obligatorios para enviar tu confirmación.");
+                return;
+            }
+
+            let mensaje = `*CONFIRMACIÓN DE ASISTENCIA - BAUTIZO HÉCTOR EMILIO*\n\n`;
+            mensaje += `👤 *Invitado:* ${name}\n`;
+            mensaje += `✨ *Estado:* ${status}\n`;
+            if(status.includes("Sí")) {
+                mensaje += `👨‍👩‍👧‍👦 *Lugares requeridos:* ${totalCompanions}\n`;
+            }
+            mensaje += `\n¡Gracias por formar parte de este día tan especial!`;
+
+            const urlMensaje = encodeURIComponent(mensaje);
+            const whatsappLink = `https://wa.me/524924202324?text=${urlMensaje}`;
+
+            window.open(whatsappLink, '_blank');
+        }
+    </script>
+</body>
+</html>
